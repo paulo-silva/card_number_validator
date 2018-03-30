@@ -3,7 +3,7 @@ module CardValidator
     class Amex
 
       def self.validate(card_number)
-        card_number ? /3(7|4)\d{13}/.match(card_number) : false
+        card_number ? /^3(7|4)\d{13}/.match(card_number) : false
       end
       
       def self.generate

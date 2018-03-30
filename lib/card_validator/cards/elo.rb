@@ -13,7 +13,7 @@ module CardValidator
       end
       
       def self.generate
-        card_prefix = self::ELO_BINS[rand(0..12)]
+        card_prefix = self::ELO_BINS[rand(0..self::ELO_BINS.size-1)]
         "#{card_prefix}#{rand(10**10)}"
       end
     end
