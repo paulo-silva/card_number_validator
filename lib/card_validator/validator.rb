@@ -15,6 +15,7 @@ module CardValidator
     )
 
     def self.flag(card_number)
+      card_number = card_number.to_s
       self::FLAGS.each do |flag|
         flag_found = flag_class(flag).send('validate', card_number)
         return flag if flag_found
