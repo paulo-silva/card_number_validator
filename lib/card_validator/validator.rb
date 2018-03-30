@@ -1,10 +1,11 @@
-require 'cards/amex'
-require 'cards/diners'
-require 'cards/elo'
-require 'cards/hiper'
-require 'cards/hipercard'
-require 'cards/mastercard'
-require 'cards/visa'
+require 'securerandom'
+require 'card_validator/cards/amex'
+require 'card_validator/cards/diners'
+require 'card_validator/cards/elo'
+require 'card_validator/cards/hiper'
+require 'card_validator/cards/hipercard'
+require 'card_validator/cards/mastercard'
+require 'card_validator/cards/visa'
 
 module CardValidator
   class Validator
@@ -32,11 +33,9 @@ module CardValidator
     end
 
     def self.flag_class(flag)
-      flag_class = "CardValidator::Cards::#{flag.classify}"
-      if flag == 'diners'
-        flag_class = "CardValidator::Cards::#{flag.classify.pluralize}"
-      end
-      flag_class.constantize
+      flag_class = "CardValidator::Cards::#{flag.to_s.capitalize}"
+      flag_class = "CardValidator::Cards::Diners" if flag == :diners
+      Kernel.const_get flag_class
     end
   end
 end

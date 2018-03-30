@@ -3,11 +3,11 @@ module CardValidator
     class Amex
 
       def self.validate(card_number)
-        card_number.present? && /3(7|4)\d{13}/.match(card_number)
+        card_number ? /3(7|4)\d{13}/.match(card_number) : false
       end
       
       def self.generate
-        "37#{SecureRandom.random_number(13)}"
+        "37#{rand(10**13)}"
       end
     end
   end
