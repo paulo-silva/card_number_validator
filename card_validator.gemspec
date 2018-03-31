@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'card_validator'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.authors     = ['Paulo Henrique da Silva']
   s.email       = ['paulo.silva1337@gmail.com']
   s.homepage    = 'https://github.com/pauloh-silva/card_validator'
