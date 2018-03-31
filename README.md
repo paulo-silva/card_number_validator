@@ -1,4 +1,4 @@
-#card_validator [![Build Status](https://travis-ci.org/pauloh-silva/card_validator.svg?branch=master)](https://travis-ci.org/pauloh-silva/card_validator)
+# card_validator [![Build Status](https://travis-ci.org/pauloh-silva/card_validator.svg?branch=master)](https://travis-ci.org/pauloh-silva/card_validator)
 [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/pauloh-silva/card_validator)
 
 Card Validator provides you some methods to validate the most used card flags in the world.
@@ -71,3 +71,5 @@ It is free software, and may be redistributed under the terms specified in the [
 ## Feature Requests & Bugs
 
 See <http://github.com/pauloh-silva/card_validator/issues>
+
+[contributors]: https://github.com/thoughtbot/shoulda-matchers/contributors
