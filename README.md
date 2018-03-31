@@ -72,4 +72,4 @@ It is free software, and may be redistributed under the terms specified in the [
 
 See <http://github.com/pauloh-silva/card_validator/issues>
 
-[contributors]: https://github.com/thoughtbot/shoulda-matchers/contributors
+[contributors]: https://github.com/pauloh-silva/card_validator/contributors
