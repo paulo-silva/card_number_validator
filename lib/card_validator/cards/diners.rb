@@ -7,7 +7,7 @@ module CardValidator
       end
       
       def self.generate
-        "3#{rand(10**13)}"
+        "3#{rand(10**13).to_s.rjust(13,rand(1..9).to_s)}"
       end
     end
   end

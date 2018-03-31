@@ -10,7 +10,7 @@ module CardValidator
       
       def self.generate
         card_prefix = self::HIPER_BINS[rand(0..self::HIPER_BINS.size-1)]
-        "#{card_prefix}#{rand(10**10)}"
+        "#{card_prefix}#{rand(10**10).to_s.rjust(10,rand(1..9).to_s)}"
       end
     end
   end

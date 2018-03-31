@@ -22,7 +22,7 @@ module CardValidator
       
       def self.generate
         master_range = self::MASTERCARD_RANGES[rand(0..self::MASTERCARD_RANGES.size-1)]
-        "#{rand(master_range[0]..master_range[1])}#{rand(10**10)}"
+        "#{rand(master_range[0]..master_range[1])}#{rand(10**10).to_s.rjust(10,rand(1..9).to_s)}"
       end
     end
   end

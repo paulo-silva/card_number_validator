@@ -35,7 +35,7 @@ module CardValidator
 
     def self.flag_class(flag)
       flag_class = "CardValidator::Cards::#{flag.to_s.capitalize}"
-      flag_class = "CardValidator::Cards::Diners" if flag == :diners
+      flag_class = 'CardValidator::Cards::Diners' if flag == :diners
       Kernel.const_get flag_class
     end
   end
