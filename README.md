@@ -9,7 +9,7 @@ Add `card_validator` to `Gemfile`
 `Gemfile`:
 
 ```ruby
-gem 'card_validator', '0.1.0'
+gem 'card_validator', git: 'https://github.com/pauloh-silva/card_validator'
 ```
 
 Download and install by running:
