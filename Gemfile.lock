@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    card_validator (0.1.0)
+    card_number_validator (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -39,7 +39,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  card_validator!
+  card_number_validator!
   rake
   rspec
   simplecov

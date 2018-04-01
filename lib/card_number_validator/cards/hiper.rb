@@ -1,4 +1,4 @@
-module CardValidator
+module CardNumberValidator
   module Cards
     class Hiper
       HIPER_BINS = %w[637095 637612 637599 637609 637568].freeze

@@ -1,15 +1,15 @@
-# card_validator [![Build Status][travis-badge]][travis] [![Code Climate][code-climate-badge]][code-climate]
+# card_number_validator [![Build Status][travis-badge]][travis] [![Code Climate][code-climate-badge]][code-climate]
 
 Card Validator provides you some methods to validate the most used card flags in the world.
 In addition, you can generate fake card numbers for development and tests purposes.
 
 ## Installation
 
-Add `card_validator` to `Gemfile`
+Add `card_number_validator` to `Gemfile`
 `Gemfile`:
 
 ```ruby
-gem 'card_validator', '0.1.0'
+gem 'card_number_validator', '0.1.0'
 ```
 
 Download and install by running:
@@ -22,40 +22,40 @@ bundle install
 
 ## Usage
 
-### CardValidator::Validator.flag(card_number)
+### CardNumberValidator.flag(card_number)
 Returns flag name to provided card number or :unknown
 when the provided number is invalid
 
 See Example:
 ``` ruby
-  CardValidator::Validator.flag('378282246310005') # :amex 
-  CardValidator::Validator.flag('30569309025904') # :diners 
-  CardValidator::Validator.flag('6363683839698868') # :elo 
-  CardValidator::Validator.flag('6062826289081176') # :hipercard 
-  CardValidator::Validator.flag('4012888888881881') # :visa 
-  CardValidator::Validator.flag('5223358786371817') # :mastercard
-  CardValidator::Validator.flag('111') # :unknown
+  CardNumberValidator.flag('378282246310005') # :amex 
+  CardNumberValidator.flag('30569309025904') # :diners 
+  CardNumberValidator.flag('6363683839698868') # :elo 
+  CardNumberValidator.flag('6062826289081176') # :hipercard 
+  CardNumberValidator.flag('4012888888881881') # :visa 
+  CardNumberValidator.flag('5223358786371817') # :mastercard
+  CardNumberValidator.flag('111') # :unknown
 ```
-### CardValidator::Validator.valid?(card_number)
+### CardNumberValidator.valid?(card_number)
 Returns if provided card number is valid or not
 
 See Example:
 ``` ruby
-  CardValidator::Validator.valid?('378282246310005') # true
-  CardValidator::Validator.valid?('30569309025904') # true
-  CardValidator::Validator.valid?('6363683839698868') # true
-  CardValidator::Validator.valid?('6062826289081176') # true
-  CardValidator::Validator.valid?('4012888888881881') # true
-  CardValidator::Validator.valid?('5223358786371817') # true
-  CardValidator::Validator.valid?('111') # false
+  CardNumberValidator.valid?('378282246310005') # true
+  CardNumberValidator.valid?('30569309025904') # true
+  CardNumberValidator.valid?('6363683839698868') # true
+  CardNumberValidator.valid?('6062826289081176') # true
+  CardNumberValidator.valid?('4012888888881881') # true
+  CardNumberValidator.valid?('5223358786371817') # true
+  CardNumberValidator.valid?('111') # false
 ```
 
-### CardValidator::Validator.generate(:flag_name)
+### CardNumberValidator.generate(:flag_name)
 Returns fake card number by provided flag name
 
 See Example:
 ``` ruby
-  CardValidator::Validator.generate(:amex) # '378282246310005'
+  CardNumberValidator.generate(:amex) # '378282246310005'
 ```
 
 ## Contributing
@@ -69,10 +69,10 @@ It is free software, and may be redistributed under the terms specified in the [
 
 ## Feature Requests & Bugs
 
-See <http://github.com/pauloh-silva/card_validator/issues>
+See <http://github.com/pauloh-silva/card_number_validator/issues>
 
-[contributors]: https://github.com/pauloh-silva/card_validator/contributors
-[travis]: https://travis-ci.org/pauloh-silva/card_validator
-[travis-badge]: https://travis-ci.org/pauloh-silva/card_validator.svg?branch=master
-[code-climate]: https://codeclimate.com/github/pauloh-silva/card_validator
+[contributors]: https://github.com/pauloh-silva/card_number_validator/contributors
+[travis]: https://travis-ci.org/pauloh-silva/card_number_validator
+[travis-badge]: https://travis-ci.org/pauloh-silva/card_number_validator.svg?branch=master
+[code-climate]: https://codeclimate.com/github/pauloh-silva/card_number_validator
 [code-climate-badge]: https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg

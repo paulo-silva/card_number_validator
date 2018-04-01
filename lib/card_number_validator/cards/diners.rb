@@ -1,4 +1,4 @@
-module CardValidator
+module CardNumberValidator
   module Cards
     class Diners
 

@@ -1,7 +1,7 @@
 require 'simplecov'
 require 'simplecov-console'
 
-require "#{Dir.getwd}/lib/card_validator"
+require "#{Dir.getwd}/lib/card_number_validator"
 SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start
 
