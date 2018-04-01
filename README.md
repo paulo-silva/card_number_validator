@@ -1,6 +1,6 @@
 # card_number_validator [![Gem Version][version-badge]][rubygems] [![Build Status][travis-badge]][travis] [![Code Climate][code-climate-badge]][code-climate]
 
-Card Validator provides you some methods to validate the most used card flags in the world.
+CardNumberValidator provides you some methods to validate the most used card flags in the world.
 In addition, you can generate fake card numbers for development and tests purposes.
 
 ## Installation
@@ -9,7 +9,7 @@ Add `card_number_validator` to `Gemfile`
 `Gemfile`:
 
 ```ruby
-gem 'card_number_validator', '0.1.0'
+gem 'card_number_validator'
 ```
 
 Download and install by running:
