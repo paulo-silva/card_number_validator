@@ -1,4 +1,4 @@
-# card_number_validator [![Build Status][travis-badge]][travis] [![Code Climate][code-climate-badge]][code-climate]
+# card_number_validator [![Gem Version][version-badge]][rubygems] [![Build Status][travis-badge]][travis] [![Code Climate][code-climate-badge]][code-climate]
 
 Card Validator provides you some methods to validate the most used card flags in the world.
 In addition, you can generate fake card numbers for development and tests purposes.
@@ -76,3 +76,5 @@ See <http://github.com/pauloh-silva/card_number_validator/issues>
 [travis-badge]: https://travis-ci.org/pauloh-silva/card_number_validator.svg?branch=master
 [code-climate]: https://codeclimate.com/github/pauloh-silva/card_number_validator
 [code-climate-badge]: https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg
+[rubygems]: http://rubygems.org/gems/card_number_validator
+[version-badge]: https://badge.fury.io/rb/card_number_validator.svg
