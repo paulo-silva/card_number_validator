@@ -28,26 +28,26 @@ when the provided number is invalid
 
 See Example:
 ``` ruby
-  CardNumberValidator.flag('378282246310005') # :amex 
-  CardNumberValidator.flag('30569309025904') # :diners 
-  CardNumberValidator.flag('6363683839698868') # :elo 
-  CardNumberValidator.flag('6062826289081176') # :hipercard 
-  CardNumberValidator.flag('4012888888881881') # :visa 
+  CardNumberValidator.flag('378282246310005')  # :amex
+  CardNumberValidator.flag('30569309025904')   # :diners
+  CardNumberValidator.flag('6363683839698868') # :elo
+  CardNumberValidator.flag('6062826289081176') # :hipercard
+  CardNumberValidator.flag('4012888888881881') # :visa
   CardNumberValidator.flag('5223358786371817') # :mastercard
-  CardNumberValidator.flag('111') # :unknown
+  CardNumberValidator.flag('1111111111111111') # :unknown
 ```
 ### CardNumberValidator.valid?(card_number)
 Returns if provided card number is valid or not
 
 See Example:
 ``` ruby
-  CardNumberValidator.valid?('378282246310005') # true
-  CardNumberValidator.valid?('30569309025904') # true
+  CardNumberValidator.valid?('378282246310005')  # true
+  CardNumberValidator.valid?('30569309025904')   # true
   CardNumberValidator.valid?('6363683839698868') # true
   CardNumberValidator.valid?('6062826289081176') # true
   CardNumberValidator.valid?('4012888888881881') # true
   CardNumberValidator.valid?('5223358786371817') # true
-  CardNumberValidator.valid?('111') # false
+  CardNumberValidator.valid?('1111111111111111') # false
 ```
 
 ### CardNumberValidator.generate(:flag_name)
@@ -56,6 +56,20 @@ Returns fake card number by provided flag name
 See Example:
 ``` ruby
   CardNumberValidator.generate(:amex) # '378282246310005'
+```
+
+### String#card_flag
+Returns the card flag for the given card number
+
+See Example:
+```ruby
+  '378282246310005'.card_flag  # :amex
+  '30569309025904'.card_flag   # :diners
+  '6363683839698868'.card_flag # :elo
+  '6062826289081176'.card_flag # :hipercard
+  '4012888888881881'.card_flag # :visa
+  '5223358786371817'.card_flag # :mastercard
+  '1111111111111111'.card_flag # :unknown
 ```
 
 ## Contributing
