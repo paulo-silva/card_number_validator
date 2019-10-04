@@ -1,6 +1,6 @@
 # card_number_validator [![Gem Version][version-badge]][rubygems] [![Build Status][travis-badge]][travis] [![Code Climate][code-climate-badge]][code-climate]
 
-CardNumberValidator provides you some methods to validate the most used card flags in the world.
+CardNumberValidator provides methods to validate the most used card flags in the world.
 In addition, you can generate fake card numbers for development and tests purposes.
 
 ## Installation
@@ -23,8 +23,7 @@ bundle install
 ## Usage
 
 ### CardNumberValidator.flag(card_number)
-Returns flag name to provided card number or :unknown
-when the provided number is invalid
+Returns the flag name of the card or `:unknown` when the number is invalid.
 
 See Example:
 ``` ruby
@@ -37,7 +36,7 @@ See Example:
   CardNumberValidator.flag('1111111111111111') # :unknown
 ```
 ### CardNumberValidator.valid?(card_number)
-Returns if provided card number is valid or not
+Checks if the given card number is valid or not.
 
 See Example:
 ``` ruby
@@ -51,7 +50,7 @@ See Example:
 ```
 
 ### CardNumberValidator.generate(:flag_name)
-Returns fake card number by provided flag name
+Returns a fake card number for the given flag name.
 
 See Example:
 ``` ruby

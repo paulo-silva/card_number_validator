@@ -9,17 +9,18 @@ require 'card_number_validator/cards/visa'
 require 'string'
 
 module CardNumberValidator
-
   FLAGS = %i(
     amex diners elo hiper hipercard mastercard visa
   )
 
   def self.flag(card_number)
     card_number = card_number.to_s
+
     self::FLAGS.each do |flag|
-      flag_found = flag_class(flag).send('validate', card_number)
+      flag_found = flag_class(flag).public_send('validate', card_number)
       return flag if flag_found
     end
+
     :unknown
   end
 
@@ -30,12 +31,11 @@ module CardNumberValidator
   def self.generate(flag)
     flag = flag.to_sym
     return unless self::FLAGS.include?(flag)
-    flag_class(flag).send('generate')
+    flag_class(flag).public_send('generate')
   end
 
   def self.flag_class(flag)
     flag_class = "CardNumberValidator::Cards::#{flag.to_s.capitalize}"
-    flag_class = 'CardNumberValidator::Cards::Diners' if flag == :diners
     Kernel.const_get flag_class
   end
 end
