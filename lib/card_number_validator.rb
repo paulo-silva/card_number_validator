@@ -6,6 +6,7 @@ require 'card_number_validator/cards/hiper'
 require 'card_number_validator/cards/hipercard'
 require 'card_number_validator/cards/mastercard'
 require 'card_number_validator/cards/visa'
+require 'string'
 
 module CardNumberValidator
   FLAGS = %i(
